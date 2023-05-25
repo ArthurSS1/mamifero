@@ -7,18 +7,18 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model ornitorrinco {
-  id          Int      @id
-  name        String?  @db.VarChar(50)
-  age         Int?
-  description String?  @db.VarChar(50)
-  vaccinated  Boolean?
-}
-
 model ornitorrincos {
   id          Int      @id
   name        String?  @db.VarChar
   age         Int?
   description String?  @db.VarChar
+  vaccinated  Boolean?
+}
+
+model ornitorrinco {
+  id          Int      @id
+  name        String?  @db.VarChar(50)
+  age         Int?
+  description String?  @db.VarChar(50)
   vaccinated  Boolean?
 }
