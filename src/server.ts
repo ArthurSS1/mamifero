@@ -51,7 +51,7 @@ app.put('/ornitorrincoss/:name', async (request: FastifyRequest, reply: FastifyR
     const ornitorrincosData = request.body as Prisma.ornitorrincosUpdateInput;;
 
     try {
-        const updatedornitorrincos = await prisma.ornitorrincos.updateMany({
+        const updatedOrnitorrincos = await prisma.ornitorrincos.updateMany({
             where: { name: name },
             data: ornitorrincosData, 
         });
@@ -66,7 +66,7 @@ app.delete('/ornitorrincoss/:name', async (request: FastifyRequest, reply: Fasti
     const { name } = request.params as { name: string };
 
     try {
-        const deletedornitorrincos = await prisma.ornitorrincos.deleteMany({
+        const deletedOrnitorrincos = await prisma.ornitorrincos.deleteMany({
             where: { name: name },
         });
 
