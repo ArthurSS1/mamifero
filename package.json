@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "@fastify/cors": "^8.2.1",
+    "@prisma/client": "^4.14.1",
+    "fastify": "^4.17.0",
     "prisma": "^4.14.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
   }
 }
