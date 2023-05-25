@@ -2,7 +2,6 @@ import Fastify, { FastifyRequest, FastifyReply } from 'fastify';
 import { Prisma, PrismaClient } from "@prisma/client";
 import { ornitorrincos } from "@prisma/client";
 import cors from '@fastify/cors';
-import { request } from 'http';
 
 const prisma = new PrismaClient();
 const app = Fastify();

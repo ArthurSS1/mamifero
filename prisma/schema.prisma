@@ -14,11 +14,3 @@ model ornitorrincos {
   description String?  @db.VarChar
   vaccinated  Boolean?
 }
-
-model ornitorrinco {
-  id          Int      @id
-  name        String?  @db.VarChar(50)
-  age         Int?
-  description String?  @db.VarChar(50)
-  vaccinated  Boolean?
-}
